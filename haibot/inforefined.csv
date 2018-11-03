@@ -1,0 +1,32 @@
+SENTENCES,CLASS
+what about hotel NNP with x,QF
+can there be x in the hotel,IN
+i want a hotel with x,IN
+does hotel NNP serves the best x,QF
+is there x,IN
+is there free x,IN
+can my hotel have x,IN
+I need x in my hotel,IN
+what does hotel NNP have,QF
+does hotel NNP have x,QF
+is x in hotel NNP,QF
+is x in that hotel NNP,QF
+make sure the hotel has x,IN
+can the hotel have x,IN
+does the hotel NNP have x,QF
+is x in hotel NNP,QF
+is x in that hotel NNP,QF
+is hotel NNP cheap,QF
+I want x in my hotel,IN
+please include x,IN
+I would like x in my hotel,IN
+I would like my hotel to have x,IN
+can you recommend me a hotel with x,IN
+do you have x in hotel NNP ?,QF
+I want a hotel with,IN
+I also want it to have ,IN
+I want a hotel that serves,IN
+recommend me a hotel with a and ,IN
+I also want a ,IN
+How's NNP,QF
+how's NNP,QF

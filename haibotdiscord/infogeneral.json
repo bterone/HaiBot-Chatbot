@@ -1,0 +1,104 @@
+{"intents": [{"context_set": "",
+    "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day","Hi there"],
+    "responses": ["Hello, thanks for visiting. How may I help you?",
+     "Good to see you again, how can I help?",
+     "Hi there, how can I help?"],
+    "tag": "greeting"
+    },
+    {"patterns": ["Bye", "See you later", "Goodbye"],
+    "responses": ["See you later, thanks for visiting",
+     "Have a nice day",
+     "Bye! Come back again soon."],
+    "tag": "goodbye"},
+    {"patterns": ["Thanks", "Thank you", "That's helpful"],
+    "responses": ["Happy to help!", "Any time!", "My pleasure"],
+    "tag": "thanks"
+    },
+    {"patterns": ["Do you do reservations?",
+     "Can I book ?",
+     "I want to reserve ",
+    "reserve ","book ","have a booking for ", "can I book a room?", "I would like to book a ", "I would like to book a room in a hotel"],
+    "responses": ["Sorry, we don't do any bookings on this website. Only recommendations, can I help you there instead?",
+     "I'm really sorry, but I only recommend hotels and their websites, maybe I can assist you there instead?"],
+    "tag": "reserve"
+    },
+    {"tag":"confirmreserve",
+    "responses":["What features would be in your ideal hotel?"]
+    },
+    {"patterns":["Can you recommend me a hotel?","What is a good hotel to stay at?",
+      "I want to know what resorts are available now",
+      "which is the best hotel?","tell me a hotel","which is the best?","which hotel is best",
+      "which hotel is good","I am looking for a hotel room","I am looking for a hotel",
+      "List me a bunch of hotels", "I want a hotel ", "I want to know about a hotel", "I would like you to recommend me a hotel"],
+    "responses":["There are quite a few hotels. Is there anything specific you'd like in a hotel?"],
+    "tag":"recommendhotel"
+    },
+    {"patterns":["Can you recommend me a ?","What is a good ?",
+      "I want to know what  are available now",
+      "which is the best ?","tell me a ","which is best",
+      "which  is good","I am looking for a ","I am looking for a ",
+      "List me a bunch of ", "I want a ", "I want to know about a ", "recommend me a good", "I'm looking for a good "],
+      "responses":["Uh, I recommend hotels. How about you tell me what you'd like in a hotel instead?"],
+      "tag":"recommendrandom"
+    },
+    {"responses":["And what might that be?"],
+      "tag":"confirmrecommendhotel"
+    },
+    {"responses":["And what might that be?"],
+      "tag":"confirmrecommendrandom"
+    },
+    {
+      "patterns":["What is a hotel?","What are hotels for?","Why should I stay in a hotel?"],
+      "responses":["A hotel is an establishment providing accommodation, meals, and other services for travellers and tourists, but people also use it as a code word for radio communication!"],
+      "tag":"whathotel"
+    },
+    {
+      "patterns":["Yeah","yes","yup","y","of course", "sure"],
+      "responses":["I don't understand what you're saying, yes?","Yes I know I'm handsome","Yes? beep boop"],
+      "tag":"confirm"
+    },
+    {
+      "patterns":["Nope","no","nay","n","heck no","hell no"],
+      "responses":["I don't understand what you're saying, no?","No! How dare you?!","No? beep boop"],
+      "tag":"deny"
+    },
+    {
+      "responses":["Then I'm sorry but I don't think I can help you", "Aww. I'm sorry I couldn't help you.", "Well, then I'm sorry I didn't meet your expectations..."],
+      "tag":"denyhelp"
+    },
+    {"patterns":["is this hotel closest to NNP ","what hotels are close to NNP ",
+      "which hotels are close to NNP ","where are the closest hotels to NNP ",
+      "how can I get to this hotel NNP","is this hotel located near NNP","is this hotel near NNP"],
+      "responses":["Sorry, I don't really do that. You can tell me addresses to see if I can find a hotel in my database that suits your needs!"],
+      "tag":"location"
+    },
+    {"patterns":["I want a hotel near NNP","I want a hotel located near NNP","give me a hotel located at NNP","give me a hotel near NNP ", "I want a hotel located at NNP", "Do you know any hotels in the NNP area ?"],
+      "responses":["Sure, I'll take that location into consideration when making my recommendation"],
+      "tag":"infolocation"
+    },
+    {"patterns":["what is the best hotel in ", "What hotel is the best in ","What is the top hotel in ", "What are the top hotels in "],
+      "responses":["I only know a limited amount of hotels in Colombo for now, how about you tell me what you want in your hotel?"],
+      "tag":"locationreq"
+    },
+    {"patterns":["why should I go to this hotel NNP ?","tell me more NNP ",
+      "tell me more about this hotel NNP ","I want to know more NNP ",
+      "what is this hotel about? NNP ", "what is the hotel about? NNP ", "tell me more about the hotel NNP ","why should I go to the hotel? NNP "],
+      "responses":["Sure, I heard that this hotel has the following features,"],
+      "tag":"moredetails"
+    },
+    {"patterns":["are there hotels similar to ","what hotels are the same as ",
+      "I want a hotel similar to ","I want a hotel the same as "],
+      "responses":["I think so, there's this hotel which has "],
+      "tag":"compare"
+    },
+    {"patterns":["yes recommend","sure recommend","tell me a few","recommend me","recommend",
+      "yes recommendation","sure recommendation", "give me a name","name the hotel"],
+      "responses":["Okay, the hotels that resembles what you described are :"],
+      "tag":"recommendconfirm"
+    },
+    {"patterns":["xD","XD","lol","LOL","hahahahaha","HAHAHAHAHA","lmao","LMAO"],
+      "responses":["Take that!"],
+      "tag":"internetslang"
+    }
+   ]}
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Interface Concept</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+
+<script src="https://use.typekit.net/hoy3lrg.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+<div id="frame">
+	<div id="sidepanel">
+		<div id="profile">
+			<div class="wrap">
+				<img id="profile-img" src="./img/Mackymunoz99designs.png" alt="" />
+				<p>Welcome to HaiBot!</p>
+			</div>
+		</div>
+		<div id="contacts">
+			<ul>
+				<li class="contact">
+                    <a href="mainhome.html">
+                        <div class="wrap">
+                            <img src="./img/baseline_home_white_18dp.png" alt="" />
+                            <div class="meta">
+                                <p class="name">Home</p>
+                                <p class="preview">The main homepage</p>
+                            </div>
+                        </div>
+                    </a>
+				</li>
+				<li class="contact">
+                    <a href="index.html">
+                        <div class="wrap">
+                            <img src="./img/Mackymunoz99designs.png" alt="" />
+                            <div class="meta">
+                                <p class="name">Chat</p>
+                                <p class="preview">Chat with the hotel recommender</p>
+                            </div>
+                        </div>
+                    </a>
+				</li>
+				<li class="contact">
+					<div class="wrap">
+						<img src="./img/baseline_group_white_18dp.png" alt="" />
+						<div class="meta">
+							<p class="name">About</p>
+						</div>
+					</div>
+				</li>
+				<li class="contact">
+					<a href="contactus.html">
+						<div class="wrap">
+							<img src="./img/baseline_mail_white_18dp.png" alt="" />
+							<div class="meta">
+								<p class="name">Contact us</p>
+								<p class="preview">Send us a message!</p>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="bottom-bar">
+			<button id="addhotel"><i class="fa fa-plus fa-fw" aria-hidden="true"></i> <span>Add hotel</span></button>
+		</div>
+	</div>
+	<div class="content">
+		<div class="home-profile">
+			<img src="./img/baseline_home_white_18dp.png" alt="" />
+			<p>Hai Bot Recommender</p>
+			<div class="social-media">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				 <i class="fa fa-instagram" aria-hidden="true"></i>
+			</div>
+		</div>
+        <div class="messageh">
+			<form name="messageh" method="POST" action="/submit" class="message">
+					<label>Hotel Name</label>
+					<input type="text" name="hname" id="hname" value="">
+					<label>Hotel Details</label>
+					<textarea type="text" name="hdesc" id="hdesc"></textarea>
+					<input type="submit" value="Add Hotel"/>
+            </form>
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "haibot-example",
+  "version": "0.0.1",
+  "description": "my first discord bot",
+  "main": "bot.js",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "discord.js": "^11.4.2",
+    "winston": "^3.0.0"
+  }
+}
