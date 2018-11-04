@@ -23,15 +23,21 @@ io.on('connection', function(socket){
     socket.on('chat message', function(msg){
       console.log('message: ' + msg);
       io.emit('chat message', msg);
+
+      //Sends an argument to haibot.py for a chatbot response
       const { spawn } = require('child_process');
       const pyProg = spawn('python', [__dirname + '/app/haibot.py', '"'+msg+'"']);
 
+      //Outputs result to the chat on localhost
       pyProg.stdout.on('data', function(data) {
 
         console.log(data.toString());
         //res.write(data);
         io.emit('reply',data.toString());
         //res.end('end');
+
+        //Depending on result, it will reply with a Google Image of hotel
+        //NOTE REQUIRES GOOGLE IMAGE API
         if (data.toString().includes(':, Number 1: ')) {
           var array = data.toString().split(',')
           var hotel = array[2].replace(' Number 1: ', '')
@@ -61,6 +67,7 @@ io.on('connection', function(socket){
     });
 });
 
+//Basic submit and login functions just slapped on there
 app.post('/submit', function (req, res) {
 	var hname = req.body.hname
 	var hdesc = req.body.hdesc

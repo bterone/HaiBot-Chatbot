@@ -9,3 +9,5 @@ Check localhost:3000
 
 ## Features
 Currently recommends hotels in Colombo and can hold simple conversations.  
+NOTE: For Google Image feature, you need a custom Google Search Engine with its API key and give its API with URL to the app.js  
+NOTE: For Discord implementation, you'd need to add the bot onto a server and give its API key to the bot.js
